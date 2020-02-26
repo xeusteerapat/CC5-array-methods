@@ -22,3 +22,25 @@ const arr9 = [
 
 const arr10 = arr9.map(name => name.name);
 console.log(arr10);
+const arr11 = arr9.map(name => name.age);
+console.log(arr11);
+
+const array12 = [
+  { name: "apple", surname: "London" },
+  { name: "banana", surname: "Bangkok" },
+  { name: "watermelon", surname: "Singapore" }
+];
+
+const arr13 = array12.map(item => `${item.name} ${item.surname}`);
+console.log(arr13);
+
+const arr14 = [1, 3, 4, 5, 6, 7, 8];
+const arr15 = arr14.map(item => {
+  if (item % 2 === 0) return "even";
+  else return "odd";
+});
+
+console.log(arr15);
+
+const arr16 = [1, -3, 2, 8, -4, 5];
+const arr17 = arr16.map(item => {});

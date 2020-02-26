@@ -2,7 +2,7 @@ function sumInput() {
   const arr = [];
   let input;
 
-  while (input !== null) {
+  while (true) {
     input = Number(prompt("Enter number"));
     if (!input) break;
     arr.push(input);
