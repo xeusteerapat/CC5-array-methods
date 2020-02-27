@@ -85,13 +85,15 @@ console.log(arr21);
 
 const arr22 = [
   { name: "apple", birth: "2000-01-01" },
-  { name: "banana", birth: "1990-10-01" },
-  { name: "watermelon", birth: "1985-12-01" }
+  { name: "banana", birth: "1990-10-10" },
+  { name: "watermelon", birth: "1985-12-30" }
 ];
 
 const arr23 = arr22.map(obj => {
-  let date = new Date(obj.birth).toString().slice(4);
-  date = date.split(" ");
+  let date = new Date(obj.birth)
+    .toString()
+    .slice(4)
+    .split(" ");
   return `
   <tr><td>${obj.name}</td><td>${date[1]} ${date[0]} ${date[2]}</td></tr>
   `;
