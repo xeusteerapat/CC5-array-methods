@@ -43,15 +43,11 @@ const arr15 = arr14.map(item => {
 console.log(arr15);
 
 const arr16 = [1, -3, 2, 8, -4, 5];
-const arr17 = arr16.map(item => {
-  return item < 1 ? item * -1 : item;
-});
+const arr17 = arr16.map(item => Math.abs(item));
 console.log(arr17);
 
 const arr18 = [100, 200.25, 300.84, 400.3];
-const arr19 = arr18.map(item => {
-  return item.toFixed(2);
-});
+const arr19 = arr18.map(item => item.toFixed(2));
 console.log(arr19);
 
 const arr20 = [
